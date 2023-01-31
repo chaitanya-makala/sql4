@@ -58,17 +58,17 @@ const User = sequelize.define("users", {
 //   });
 
 // 8. Use the following code snippet to read the table contents
-sequelize
-  .sync()
-  .then(() => {
-    User.findAll()
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((error) => {
-        console.error("Failed to retrieve data : ", error);
-      });
-  })
-  .catch((error) => {
-    console.error("Unable to create table : ", error);
-  });
+// sequelize
+//   .sync()
+//   .then(() => {
+//     User.findAll()
+//       .then((res) => {
+//         console.log(res);
+//       })
+//       .catch((error) => {
+//         console.error("Failed to retrieve data : ", error);
+//       });
+//   })
+//   .catch((error) => {
+//     console.error("Unable to read table : ", error);
+//   });
